@@ -1,4 +1,5 @@
-let day = prompt('Como esta el clima hoy?, 1-soleado, 2-lluvioso, 3-Nevado, 4-Nublado, 5-otro')
+
+/*let day = prompt('Como esta el clima hoy?, 1-soleado, 2-lluvioso, 3-Nevado, 4-Nublado, 5-otro')
  let weather= parseInt(day)
  
 if(weather === 1)
@@ -17,8 +18,8 @@ else if(weather === 4){
     let description = prompt('Escribe una descipcion de como esta el dia')
         console.log(description)
 }
+*/
 
-/*
 
  switch(weather)
  {
@@ -34,4 +35,3 @@ else if(weather === 4){
         console.log(description)
         break;
  }
-*/
