@@ -5,15 +5,15 @@ if(weather === 1)
 {
     console.log(`El dia esta Soleado`)
 } 
-if(weather === 2){
+else if(weather === 2){
     console.log(`El dia esta Lluvioso`)
 }
-if(weather === 3){
+else if(weather === 3){
     console.log(`El dia esta Nevando`)
 } 
-if(weather === 4){
+else if(weather === 4){
     console.log(`El dia esta Nublado`)
-}else if(weather === 5){
+}else {
     let description = prompt('Escribe una descipcion de como esta el dia')
         console.log(description)
 }
