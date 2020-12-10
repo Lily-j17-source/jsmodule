@@ -66,3 +66,34 @@ switch(number_Day)
        console.log("Domingo")
        break;
 }
+//Exercise 5
+let number_Month = parseInt(prompt('Ingresa un numero del 1 - 12'))
+
+switch(number_Month)
+{
+    case 1:console.log(`Este mes tiene 31 dias`)
+    break;
+    case 2:console.log(`este mes tiene 28 dias`)
+    break;
+    case 3:console.log(`Este mes tiene 31 dias`)
+    break;
+    case 4:console.log(`Este mes tiene 30 dias`)
+    break;
+    case 5:console.log(`Este mes tiene 31 dias`)
+    break;
+    case 6:console.log(`Este mes tiene 30 dias`)
+    break;
+    case 7:console.log(`Este mes tiene 31 dias`)
+    break;
+    case 8:console.log(`Este mes tiene 31 dias¨`)
+    break;
+    case 9:console.log(`Este mes tiene 30 dias`)
+    break;
+    case 10:console.log(`Este mes tiene 31 dias`)
+    break;
+    case 11:console.log(`Este mes tiene 30 dias`)
+    break;
+    default: 
+       console.log("Este mes tiene 31 dias")
+       break;
+}
