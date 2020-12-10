@@ -35,6 +35,7 @@ else{
     console.log(`EL numero no es divisible entre 2 y 11`)
 }*/
 //Exercise_3
+/*
 let numberB = parseInt(prompt('Escribe un numero entre el 1 y el 100 '))
 
 if(numberB % 2 === 0 )
@@ -43,5 +44,25 @@ if(numberB % 2 === 0 )
 } 
 else{
     console.log(`EL numero es IMPAR`)
-}
+}*/
 //Exercise_4
+let number_Day = parseInt(prompt('Ingresa un numero del 1 - 7'))
+
+switch(number_Day)
+{
+    case 1:console.log(`Lunes`)
+    break;
+    case 2:console.log(`Martes`)
+    break;
+    case 3:console.log(`Miercoles`)
+    break;
+    case 4:console.log(`Jueves`)
+    break;
+    case 5:console.log(`Viernes`)
+    break;
+    case 6:console.log(`Sabado`)
+    break;
+    default: 
+       console.log("Domingo")
+       break;
+}
