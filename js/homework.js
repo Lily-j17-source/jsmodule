@@ -24,6 +24,7 @@ else if(score >= 50 && score < 60){
 }
 */
 //Exercise_2
+/*
 let number = parseInt(prompt('Escribe un numero entre el 1 y el 100 '))
 
 if(number % 2 === 0 && number % 11 === 0)
@@ -32,4 +33,15 @@ if(number % 2 === 0 && number % 11 === 0)
 } 
 else{
     console.log(`EL numero no es divisible entre 2 y 11`)
+}*/
+//Exercise_3
+let numberB = parseInt(prompt('Escribe un numero entre el 1 y el 100 '))
+
+if(numberB % 2 === 0 )
+{
+    console.log(`el numero ingresado es PAR`)
+} 
+else{
+    console.log(`EL numero es IMPAR`)
 }
+//Exercise_4
