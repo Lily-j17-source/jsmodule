@@ -1,7 +1,8 @@
 //Exercise_1
+/*
 let score = parseInt(prompt('Cual es tu calificacion? (0-100) '))
 
- 
+
 if(score >=90)
 {
     console.log(`A`)
@@ -20,4 +21,15 @@ else if(score >= 50 && score < 60){
 }
     else {
             console.log('F')
+}
+*/
+//Exercise_2
+let number = parseInt(prompt('Escribe un numero entre el 1 y el 100 '))
+
+if(number % 2 === 0 && number % 11 === 0)
+{
+    console.log(`el numero ingresado es divisible entre 2 o 11`)
+} 
+else{
+    console.log(`EL numero no es divisible entre 2 y 11`)
 }
