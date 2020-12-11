@@ -44,3 +44,41 @@ while( counter <= 10)
     console.log( `7 x ${counter} = `,7* counter)
     counter ++
 }
+//ejercicio usando do-while
+//tabla del 7
+let counterDo=1
+do{
+    //sentencia
+    console.log( `7 x ${counter} = `,7* counter)
+    counterDo ++
+}while(counterDo < 10)
+//imprimir los numeros pares entre 1 y100 usando el ciclo
+//do- o do-while
+let numero = 1
+while(numero <=100){
+    if( numero % 2 === 0)
+    {
+        console.log(numero)
+    }
+    numero++
+}
+
+
+
+//Usando ciclo while o do-while
+//dado un string
+//"reverse"
+//invertir el orden e imprimir en consola
+/*
+let fraseReversa = "reverse"
+let strReversa = ''
+let count = fraseReversa.length - 1
+console.log(count)
+
+while( count >= 0)
+{
+    strReversa += fraseReversa[count]
+    counter --
+}
+console.log(strReversa)
+*/
