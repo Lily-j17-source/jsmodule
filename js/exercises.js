@@ -36,3 +36,11 @@ for(let i = 8;i>0;i--)
     console.log(`el acuario tiene ${i} peces`)
     
 }
+
+//tabla del 7 con while
+let counter = 1
+while( counter <= 10)
+{
+    console.log( `7 x ${counter} = `,7* counter)
+    counter ++
+}
