@@ -78,7 +78,7 @@ console.log(count)
 while( count >= 0)
 {
     strReversa += fraseReversa[count]
-    counter --
+    count --
 }
 console.log(strReversa)
 */
