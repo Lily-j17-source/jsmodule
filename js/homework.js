@@ -20,7 +20,7 @@ calculateDogAge(pideNameDog,pideAge)
  * Tomar como parametro del radio del circulo 
  * calcGeometry(4)
  * -> l area del circulo es NN y la circunferencia es de NN
- */
+ 
 let radioCirculo = parseInt(prompt("Escribe el radio de la circunferencia") )
 function calcGeometry(radioCirculo){
     const PI = 3.1416
@@ -30,15 +30,32 @@ function calcGeometry(radioCirculo){
 }
 
 calcGeometry(radioCirculo)
-
+*/
 
 
 /**
  * Crear una función que convierta los grados celsius en fahrenheit y viceversa
- * debe recibir la temparatura y si la temperatura esta en Celsius o Fahrenheit
+ * debe recibir la temperatura y si la temperatura esta en Celsius o Fahrenheit
  * temperatureConverter(100,"C")
  * -> 100º Celsius equivalen a 212º fahrenheit
  */
+let temp = prompt("Escribe la temperatura ")
+let op = prompt("Ingresa F-si esta en grados Farenheir o C-si esta engrados centrigrados")
+function temperatureConverter(valor, letra){
+ let converter
+ if(letra === "C"){
+    converter = (valor * 9/5) + 32
+    console.log("La temperatura en grados Farenheit son: ", converter)
+ }
+ else if(letra === "F"){
+     converter = (valor - 32 ) * 5/9
+     console.log("la temperatura en grados Celsius es: ", converter)
+ }
+ else
+    console.log("la opcion no es valida")
+}
+temperatureConverter(temp, op)
+
 /*
  * Escribir una funcion que calcule el factorial de un número
  * getFactorial(10)
