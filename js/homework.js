@@ -38,7 +38,7 @@ calcGeometry(radioCirculo)
  * debe recibir la temperatura y si la temperatura esta en Celsius o Fahrenheit
  * temperatureConverter(100,"C")
  * -> 100º Celsius equivalen a 212º fahrenheit
- */
+ 
 let temp = prompt("Escribe la temperatura ")
 let op = prompt("Ingresa F-si esta en grados Farenheir o C-si esta engrados centrigrados")
 function temperatureConverter(valor, letra){
@@ -55,9 +55,21 @@ function temperatureConverter(valor, letra){
     console.log("la opcion no es valida")
 }
 temperatureConverter(temp, op)
+*/
+
 
 /*
  * Escribir una funcion que calcule el factorial de un número
  * getFactorial(10)
  * -> 3628800
  */
+let numero = prompt("Escribe un numero para calcular su factorial")
+
+function getFactorial(unNumero){
+    let resultado = 1
+    for (let index = 2; index <=unNumero; index ++) {
+        resultado = resultado * index
+    }console.log(resultado)
+}
+
+getFactorial(numero)
