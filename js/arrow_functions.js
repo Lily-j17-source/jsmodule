@@ -38,7 +38,7 @@ const calCircunference = (radioCirculo) =>{
 console.log(calCircunference(radioCirculo))
 */
 
-/**/
+/*
 let temp = prompt("Escribe la temperatura ")
 let op = prompt("Ingresa F-si esta en grados Farenheir o C-si esta engrados centrigrados")
 
@@ -58,9 +58,18 @@ const temperatureConverter = (valor, letra) =>{
        console.log("la opcion no es valida")
 }
 console.log(temperatureConverter(temp, op))
-   
+  */ 
    
    
    
    //resultado
-   /*
+   
+
+   let numero = prompt("Escribe un numero para calcular su factorial")
+const getFactorial = (unNumero) =>{
+    let resultado = 1
+    for (let index = 2; index <=unNumero; index ++) {
+        resultado = resultado * index
+    } return resultado
+}
+console.log(getFactorial(numero))
