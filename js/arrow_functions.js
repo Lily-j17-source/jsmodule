@@ -19,3 +19,48 @@ const edadPerrito = (pideNameDog,pideAge) => {
 }
  console.log(edadPerrito(pideNameDog,pideAge))
 */
+//Ejercicio 2
+/*
+let radioCirculo = parseInt(prompt("Escribe el radio de la circunferencia") )
+const calcArea = (radioCirculo) =>{
+const PI = 3.1416
+ let area= PI * radioCirculo * radioCirculo
+    return area
+
+}
+console.log(calcArea(radioCirculo))
+
+const calCircunference = (radioCirculo) =>{
+   const PI = 3.1416
+    let perimetro = 2 * PI * radioCirculo
+    return perimetro 
+}
+console.log(calCircunference(radioCirculo))
+*/
+
+/**/
+let temp = prompt("Escribe la temperatura ")
+let op = prompt("Ingresa F-si esta en grados Farenheir o C-si esta engrados centrigrados")
+
+const temperatureConverter = (valor, letra) =>{
+    let converter
+    if(letra === "C"){
+       converter = (valor * 9/5) + 32
+       //console.log("La temperatura en grados Farenheit son: ", converter)
+       return converter
+    }
+    else if(letra === "F"){
+        converter = (valor - 32 ) * 5/9
+       // console.log("la temperatura en grados Celsius es: ", converter)
+        return converter
+    }
+    else
+       console.log("la opcion no es valida")
+}
+console.log(temperatureConverter(temp, op))
+   
+   
+   
+   
+   //resultado
+   /*
