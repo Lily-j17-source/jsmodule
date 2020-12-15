@@ -65,7 +65,7 @@ console.log(temperatureConverter(temp, op))
    //resultado
    
 
-   let numero = prompt("Escribe un numero para calcular su factorial")
+let numero = prompt("Escribe un numero para calcular su factorial")
 const getFactorial = (unNumero) =>{
     let resultado = 1
     for (let index = 2; index <=unNumero; index ++) {
