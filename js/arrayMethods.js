@@ -15,6 +15,7 @@ tablas.forEach(currentElement => {
 //[1,2,3]
 //->[2,4,6]
 //foreach
+/**/
 const doubleValues = arrNumbers =>{
     let arrayToFill=[]
 
@@ -50,10 +51,31 @@ arrB.forEach(currentElement,index => {
 
 
 */
+const onlyEvenValues = arrNumbers =>{
+    let arrayToFill = []
+    arrNumbers.forEach(item =>{
+        console.log(item)
+        if(item %2 === 0){
+            arrayToFill.push(item)
+        }
+    })
+    return arrayToFill
+}
+//-------pendiente declarar variables
 
+/********************************* */
 //function
 //['hola','mundo']
 //->['ha','mo']
 //foreach
+const firstAndLast = arrString =>{
+    let arrayToFill = []
+    arrString.forEach(item =>{
+        //sentencia
+        console.log(item.slice(0,1))
+        console.log(item.substring(item.length -1))
+        arrayToFill.push(item.slice(0,1) + item.substring(item.length -1))
+    })
 
-/********************************* */
+}
+
