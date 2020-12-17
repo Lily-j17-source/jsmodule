@@ -34,15 +34,12 @@ console.log(newUSer)
 //  tomando el array users,
 //  hacer una funcion que reciba 2 parametros (arrayUsers, role)
 //  y retorne un array con los usuarios que cumplan con el role
-
-let usersRole = users.map((users,role) =>{
+let usersRole = users.filter((users,role) =>{
     if( users.role === "Instructor"){
         return users
     }
 });
 console.log(usersRole)
-
-
 
 // ejercicio 3
 // tomando el siguiente array de objetos
