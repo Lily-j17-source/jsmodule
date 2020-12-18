@@ -29,8 +29,15 @@ let newUSer = users.filter((cv) =>{
     
 }
 )
-
 console.log(newUSer)
+//----------------funcion de jorge
+const joinUser = users.reduce((newObject, user) => {
+    let fullname = user.firstName + ' ' + user.lastName
+    newObject[fullname] = user.role
+    return newObject
+}, {})
+
+/*********************************** */
 //  tomando el array users,
 //  hacer una funcion que reciba 2 parametros (arrayUsers, role)
 //  y retorne un array con los usuarios que cumplan con el role
