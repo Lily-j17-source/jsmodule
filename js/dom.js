@@ -35,3 +35,52 @@ unList.appendChild(listItem2)
 
 console.log(unList)
 
+
+/*INNERHTML */
+let listUl = document.getElementById("ulist")
+listUl.innerHTML="<li>Item1 usando Inner</li>"+"<li>Item2 usando Inner</li>"
+
+/**
+ * document.getElementById("caja2").innerHTML`<ul><li><a href=""`>item1</a></li></ul>
+ */
+
+
+//funcion que nos pide el selector y el numero de elemnts
+const Koders=['ale','oscar','ruben','Andre','alex','brian','carlos','charlie','elvira']
+
+const addElements = (selector,numberElements,arrNames) =>{
+    /*
+    let addSelector = document.querySelector(selector)
+    let addNumberElements = ''
+    if(numberElements < arrNames.lenght){
+      for( let count=0; i<20;i++){
+        addNumberElements += `<li> ${i + 1} ; ${arrNames[i]}</li>`
+        }  
+        addSelector.innerHTML = addNumberElements
+    }*/
+    let listKoders = ''
+    arrNames.forEach((koder, index) => {
+        if(index < numberElements ) {
+            listKoders += `<li>Koder ${index + 1}: ${koder}</li>`
+        }
+    })
+    document.querySelector(''+selector).innerHTML = listKoders
+}
+
+const filterKoders = (letter) =>{
+    let filtrados = koders.filter((koders) =>{
+        return koder.toLowerCase().startsWith(letter.toLowerCase())
+    })
+    addElements('#listak',filtrados.length,filtrados)
+
+
+}
+//tarea.. 
+/*
+Investigar el evento onchange()
+crear un afuncion que use un metodo
+usar el innerhtml
+lo tiene que disparar el selector
+
+*/
+
