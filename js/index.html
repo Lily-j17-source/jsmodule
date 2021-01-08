@@ -8,7 +8,8 @@
 <body>
     <!-- <h1>Hola Koders</h1> -->
 
-    <button onclick="addElements('#lista', 4, kodersArr)" >Todos</button>
+    <!-- <button onclick="addElements('#lista', 4, kodersArr)" >Todos</button> -->
+        <button id="showAll" >Todos</button>
         <button onclick="filterKoders('a')" >A</button>
         <button onclick="filterKoders('o')" >O</button>
         <button onclick="filterKoders('l')" >L</button>
@@ -19,11 +20,23 @@
             <option value="d">Descendente</option>
         </select>
 
+        <input type="text" id="search" placeholder="Buscar Koder" onkeyup="searchKoder()">
+
         <ul id="lista"></ul>
+        <ul id="lista2"></ul>
+
+        <div id="desktop">
+            
+        </div>
+        <div id="mobile">
+            contenido solo mobile
+        </div>
+        <p id="mensaje"></p>
 
         <script src="main.js" ></script>
         <script src="events.js"></script>
         <script src="homework.js"></script>
+        <script src="addEventListener.js"></script>
 
 
     <script src="main.js"></script>
