@@ -1,4 +1,4 @@
-const kodersArr = ['Ale','Lily', 'alejandra','oscar','ruben', 'MArio','Carlos','Zaira','Gil','Elvira','Nayeli']
+const kodersArr = ['Ale','Lily', 'alejandra','oscar','AlePaez','ruben', 'MArio','Carlos','Zaira','Gil','Elvira','Nayeli']
 
 // Exercise
 const addElements = (selector,numberElements, arrNames) => {
@@ -28,43 +28,25 @@ console.log(valor)
 console.log(tamWord)
 let addListSearch = ''
 
-
 for(indice in kodersArr){
    let name = kodersArr[indice];
    let str = name.substring(0,tamWord)
+   let listName = ''
     if(valor.length <= name.length && valor.length !=0 && name.length !=0){
         if(valor.toLowerCase() == str.toLowerCase()){
-            //listSearch += `<li> ${kodersArr[indice]} </li>`
-            let str = name.substring(0,tamWord);
-           /* addListSearch += valor
-           
-            let node = document.createElement("li");
-            let textnode = document.createTextNode(addListSearch);
-            node.appendChild(textnode);*/
+            let liKoder = document.createElement("li");
+            let textKoder = document.createTextNode(kodersArr[indice]);
+            liKoder.appendChild(textKoder);
+            document.getElementById("lista2").appendChild(liKoder);
+            //
             console.log(name)
-            
+           // listName += `<li> ${name} </li>`
+           // document.getElementById("lista2").innerHTML= listName
         }
     }
-}//document.getElementById("lista2").appendChild(node);
-
-
-
-
-
-
-//document.getElementById("lista2").appendChild(node);
+    
 }
 
-/*
 
-let listSearch = ''
-for(indice in kodersArr){
-    let name = kodersArr[indice];
-    let str = name.substring(0,tamWord);
-    if(word.length <= name.length && word.length !=0 && name.length !=0){
-        if(word.toLowerCase() == str.toLowerCase()){
-            listSearch += `<li> ${kodersArr[indice]} </li>`
-        }
-    }document.getElementById("lista").appendChild(listSearch);
 }
-*/
+

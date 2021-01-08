@@ -1,7 +1,7 @@
 let showAll = document.getElementById("showAll")
 showAll.addEventListener("click",function(){
     console.log("muestra lista con eventListener")
-    addElements("#lista",5,kodersArr)
+    addElements("#lista",12,kodersArr)
 })
 
 
@@ -52,6 +52,7 @@ const isLogged =() =>{
    else{
        document.getElementById("mensaje").innerHTML= "user is offline"
        console.log("no")
+       document.cookie= 'logged=true'
    }
 }
 
