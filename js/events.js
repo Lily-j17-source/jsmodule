@@ -27,25 +27,26 @@ let tamWord = valor.length;
 console.log(valor)
 console.log(tamWord)
 let addListSearch = ''
-
+ let listName = ''
 for(indice in kodersArr){
    let name = kodersArr[indice];
    let str = name.substring(0,tamWord)
-   let listName = ''
+  
     if(valor.length <= name.length && valor.length !=0 && name.length !=0){
         if(valor.toLowerCase() == str.toLowerCase()){
-            let liKoder = document.createElement("li");
+           /* let liKoder = document.createElement("li");
             let textKoder = document.createTextNode(kodersArr[indice]);
-            liKoder.appendChild(textKoder);
-            document.getElementById("lista2").appendChild(liKoder);
+            liKoder.appendChild(textKoder);*/
+           // document.getElementById("lista2").appendChild(liKoder);
             //
             console.log(name)
-           // listName += `<li> ${name} </li>`
-           // document.getElementById("lista2").innerHTML= listName
+           
+           listName += `<li> ${name} </li>`
+           // 
         }
     }
     
-}
+}document.getElementById("lista2").innerHTML= listName
 
 
 }
