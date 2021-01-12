@@ -38,12 +38,6 @@ const printUsers = (selector, arrData) => {
 
 
 //loadUsers()
-/*
 document.getElementById('getusers').addEventListener('click', function(){
     getData('https://jsonplaceholder.typicode.com/users',printUsers,'.list__users')
-})
-*/
-
-window.addEventListener('load',function(){
-    getData('https://jsonplaceholder.typicode.com/users',printUsers,'.table')
 })
