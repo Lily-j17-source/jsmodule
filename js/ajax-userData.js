@@ -1,6 +1,3 @@
-// Asynchronous JavaScript And XML
-// JSON
-// XML
 const getData = (url,funcionAMostrar,selector,method ='GET') => {
     const request = new XMLHttpRequest()
    
@@ -28,22 +25,37 @@ const getData = (url,funcionAMostrar,selector,method ='GET') => {
 }
 
 const printUsers = (selector, arrData) => {
-    console.log(arrData)
+   // console.log(arrData)
     let listData = ''
+    let nameUSer = ''
+
+let strUser = window.location.href;
+let tamCad = strUser.indexOf("=")
+let idUSer = strUser.substr(tamCad+1,1);//numero de id
+console.log(idUSer)//numero de id
+
     arrData.forEach(user => {
-        listData += `<li>${user.name} ${user.phone} <a href="${user.website}> Ir a sitio web </a></li>`
+        console.log("a",user.id)
+        if(idUSer ===user.id){
+            console.log("entr")
+            listData += `<tr><th>${user.name} ${user.email}</th></tr>`
+        }else{
+            console.log("no")
+        }
+        
     });
+    
+
     document.querySelector(selector).innerHTML = listData
 }
 
 
-//loadUsers()
-/*
-document.getElementById('getusers').addEventListener('click', function(){
-    getData('https://jsonplaceholder.typicode.com/users',printUsers,'.list__users')
-})
-*/
+
 
 window.addEventListener('load',function(){
     getData('https://jsonplaceholder.typicode.com/users',printUsers,'.table')
 })
+
+
+
+
