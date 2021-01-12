@@ -25,37 +25,59 @@ const getData = (url,funcionAMostrar,selector,method ='GET') => {
 }
 
 const printUsers = (selector, arrData) => {
-   // console.log(arrData)
-    let listData = ''
-    let nameUSer = ''
-
-let strUser = window.location.href;
-let tamCad = strUser.indexOf("=")
-let idUSer = strUser.substr(tamCad+1,1);//numero de id
-console.log(idUSer)//numero de id
-
+    let listData =  ''
     arrData.forEach(user => {
-        console.log("a",user.id)
-        if(idUSer ===user.id){
-            console.log("entr")
-            listData += `<tr><th>${user.name} ${user.email}</th></tr>`
-        }else{
-            console.log("no")
-        }
-        
+        listData += `
+            <li>${user.name} ${user.phone} <a href="user.html?id=${user.id}">Ver usuario</a></li>
+        `
     });
-    
-
+    document.querySelector(selector).innerHTML = listData
+}
+const printPosts = (selector, arrData) => {
+    let listData =  ''
+    arrData.forEach(user => {
+        listData += `<li>${user.id}. ${user.title} ${user.body} </li>`
+    });
     document.querySelector(selector).innerHTML = listData
 }
 
+// load post
+/*
+const getposts = document.getElementById('getposts')
+if(getusers){
+    getposts.addEventListener('click', function(){
+        getData('https://jsonplaceholder.typicode.com/posts', printPosts, '.list__posts')
+    })
+}
+*/
 
 
+const printUser = (selector, arrData) => {
+    document.querySelector(selector).innerHTML = `
+    <h5>${arrData.name}</h5>
+    <p>${arrData.email}</p>
+    <a href="${arrData.website}>Ver perfil</a>`
 
+}
+
+const userLocation = window.location;
+if(userLocation.pathname === '/user.html'){
+    let url = new URLSearchParams(location.search)
+    let id = url.get('id')
+    if(id >=1 && id <11){
+        getData(`https://jsonplaceholder.typicode.com/users/${id}`,printUser,'.card')
+    }else {
+        document.querySelector('.card').innerHTML = `
+        <p class="card-text email__user">El usuario no existe</p>        
+        `
+    }
+}
+
+/*
 window.addEventListener('load',function(){
-    getData('https://jsonplaceholder.typicode.com/users',printUsers,'.table')
+    getData('https://jsonplaceholder.t',printUsers,'.listaUsers')
 })
 
-
+*/
 
 
