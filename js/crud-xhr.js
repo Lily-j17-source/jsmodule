@@ -166,7 +166,7 @@ if(window.location.pathname === '/' || window.location.pathname === '/index.html
 
 const printUser = (arrData) => {  
     console.log(arrData)
-    document.querySelector('.list__users').innerHTML = `
+    document.querySelector('#card__user.').innerHTML = `
     <img src="${arrData.urlPhoto}">
     <h5 class="card-title name__user">${arrData.name}</h5>
     <p class="card-text email__user">${arrData.lastname}</p>
