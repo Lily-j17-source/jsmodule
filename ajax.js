@@ -38,7 +38,7 @@ $(function(){
                     <td>
                         <a href="show-user.html?id=${item}">Ver</a>
                         <a href="update-user.html?id=${item}">Actualizar</a>
-                        <button class="delete" data-id="${item}">Eliminar</button>
+                        <button class="delete delete__user" data-id="${item}">Eliminar</button>
                     </td>
                 </tr>
             `
@@ -96,11 +96,18 @@ $(function(){
 
     // delete User
     // DELETE
-    delete.addEventListener("click",function(){
-        console.log("algo")
-         let idDelete = element.dataset.data-id;
-         console.log(idDelete)
+    $('.users').on('click','.delete__user', function(){
+        let idUser = $(this).data('id')//aqui obtenemos el id del usuario que se quiere eliminar
+        console.log(idUser);
+        //ahora sigue borrar
+        //le enviamos el idUSer en el url,
+        //le ponemos el metodo
+
+        //luego tenemos qe borrar el renglon
+
+        //falta mostrar un modal, para preguntar si si quiere eliminar
     })
+   
    
     
 
